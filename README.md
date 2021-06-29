@@ -15,9 +15,9 @@ Disclaimer: The app is not endorsed in any way by eBay. This application is main
 eBay and PayPal are the property of their respective owners.
 <br>
 
-fast coding ,
-Without a neat code,
-just test for Android Studio.
+fast coding ,<br><br><br>
+Without a neat code,<br><br>
+just test for Android Studio.<br>
 
 <a href="https://ibb.co/2NsGp8D"><img src="https://i.ibb.co/FV0RdsS/img.png" alt="img" border="0"></a>
 <br>
