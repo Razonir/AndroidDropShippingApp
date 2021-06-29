@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".premium">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/cont"
+        android:elevation="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="65dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/buttom_menu">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="40dp"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premium Account"
+            android:id="@+id/one"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="without Ads"
+            android:id="@+id/two"
+            android:layout_below="@+id/one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/three"
+            android:layout_below="@id/two"
+            android:layout_marginTop="35dp"
+            android:elevation="5dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttom_menu">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="premium account is coming soon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/four"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/three"
+            android:elevation="5dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttom_menu">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="premium account is coming soon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/four"
+            android:id="@+id/five"
+            android:elevation="5dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttom_menu">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="premium account is coming soon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/five"
+            android:elevation="5dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttom_menu">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="premium account is coming soon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/aleart"
+            android:elevation="5dp"
+            android:layout_height="50dp"
+            android:onClick="bPremium"
+            android:background="@drawable/top_circle_menu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUY PREMIUM Account"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+</RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:elevation="5dp"
+        android:src="@drawable/ds"
+        android:visibility="visible" />
+</RelativeLayout>

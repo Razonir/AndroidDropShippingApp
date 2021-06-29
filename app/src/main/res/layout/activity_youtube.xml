@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".youtube">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/cont"
+        android:elevation="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="65dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/buttom_menu">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="40dp"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YouTube playlist"
+            android:id="@+id/one"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="for beginners"
+            android:id="@+id/two"
+            android:layout_below="@+id/one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/two"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            app:videoId="YG26h_9cstY"
+            app:showYouTubeButton="false"
+            app:autoPlay="true"/>
+        </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:elevation="5dp"
+        android:src="@drawable/youtube"
+        android:visibility="visible" />
+</RelativeLayout>

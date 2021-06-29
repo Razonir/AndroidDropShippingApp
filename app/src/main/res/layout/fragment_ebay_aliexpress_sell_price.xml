@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ebayAliexpressSellPrice">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardall"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/backgroundround">
+            <RelativeLayout
+                android:id="@+id/leftside"
+                android:layout_width="20dp"
+                android:layout_height="125dp"/>
+            <RelativeLayout
+                android:id="@+id/rightside"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="125dp"/>
+
+            <RelativeLayout
+                android:id="@+id/amazon"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toStartOf="@+id/midelfirst"
+                android:layout_toEndOf="@+id/leftside"
+                android:background="@drawable/top_circle_amazon">
+
+                <TextView
+                    android:id="@+id/logoamazonbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:text="aliexpress price"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/amazonPrice"
+                    android:layout_width="100dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/logoamazonbar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/edittext"
+                    android:ems="4"
+                    android:hint="0.0"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/logoamazonbar"
+                    android:layout_marginLeft="-10dp"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@id/amazonPrice"
+                    android:text="$" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/midelfirst"
+                android:layout_width="20dp"
+                android:layout_height="125dp"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:id="@+id/profitTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_marginTop="12dp"
+                android:layout_toStartOf="@+id/rightside"
+                android:layout_toEndOf="@id/midelfirst"
+                android:background="@drawable/top_circle_amazon">
+
+
+                <TextView
+                    android:id="@+id/logoprogitbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="profit wonted"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sellPrice"
+                    android:layout_width="100dp"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/logoprogitbar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/edittext"
+                    android:ems="4"
+                    android:hint="0.0"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/logoprogitbar"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_toEndOf="@id/sellPrice"
+                    android:text="$" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/profit"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/profitTitle"
+                android:layout_marginRight="17dp"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/top_circle_amazon">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="30dp"
+                    android:id="@+id/reset"
+                    android:layout_below="@id/profitTitleReslut"
+                    android:background="@android:drawable/ic_delete"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sale price"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/profitTitleReslut"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00$"
+                    android:layout_below="@+id/profitTitleReslut"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:id="@+id/resultProfit"
+                    android:textColor="#2196F3"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_marginRight="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/profit"
+                android:background="@drawable/top_circle_amazon">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:textStyle="bold"
+                    android:text="Shipping Cost:"/>
+                <EditText
+                    android:id="@+id/editcost"
+                    android:layout_width="60dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/edittext"
+                    android:layout_height="32dp"
+                    android:hint="0.0"
+                    android:ems="4"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="$"
+                    android:layout_toEndOf="@id/editcost"
+                    android:layout_marginLeft="-20dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rated"
+                android:layout_width="match_parent"
+                android:layout_marginRight="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cost"
+                android:background="@drawable/top_circle_amazon">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toptile"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:textStyle="bold"
+                    android:text="Top Rated Seller"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:id="@+id/belowtitle"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:text="Below Standard"/>
+
+                <Switch
+                    android:id="@+id/topRated"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/toptile"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content" />
+                <Switch
+                    android:id="@+id/belowStandart"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/belowtitle"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/ebayTex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp"
+            android:text="ebay Tax: 0.00$"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cardall"/>
+        <TextView
+            android:id="@+id/paypalTex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="paypal Tax: 0.00$"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ebayTex"/>
+        <TextView
+            android:id="@+id/amazonTex"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:text="aliexpress Tax: 0.00$"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/paypalTex"/>
+    </RelativeLayout>
+</RelativeLayout>

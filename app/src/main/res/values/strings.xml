@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Profit Calc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="admob_app_id">ca-app-pub-6247824013289332~6048698489</string>
+    <string name="adUnit">ca-app-pub-6247824013289332/4458841686</string>
+
+
+    <string name="banner_ad_unit" translatable="false">ca-app-pub-6247824013289332/9427586585</string>
+</resources>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_height="200dp"
+        android:background="@drawable/button_menu"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/button_menu" />
+        <TextView
+            android:id="@+id/TitleFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="45dp"
+            android:elevation="10dp"
+            android:text="Drop Shipping "
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/TitleSec"
+            android:layout_width="wrap_content"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="45dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TitleFirst"
+            android:text="Calculator Save Money "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:textColor="@color/white"
+            android:id="@+id/chos"
+            android:textStyle="bold"
+            android:text=" Where your shop"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/chos"
+            android:id="@+id/bigwhite"
+            android:background="@drawable/backwhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tab_layout_out"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_height="45dp">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:tabGravity="center"
+            app:tabTextColor="#000"
+            android:layout_margin="5dp"
+            app:tabIndicatorColor="#1D79C3"
+            app:tabSelectedTextColor="#1D79C3"
+            android:background="@drawable/backwhite"/>
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/tabLay"
+                android:layout_below="@id/suplliertitle">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/suplliertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab_layout_out"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Choose your supplier"/>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tabLay"
+                android:id="@+id/premuimout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:onClick="bPremium"
+                android:background="@drawable/top_circle_amazon">
+                <RelativeLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sideback"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ds"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/premuimText"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Get Premium Account" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/premuimTextsec"
+                    android:layout_below="@id/premuimText"
+                    android:textColor="#707070"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-2dp"
+                    android:text="No ADS and no Banners 5$/month" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/youtubeout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/premuimout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"
+                android:background="@drawable/top_circle_amazon"
+                android:textAllCaps="false">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/youtube"/>
+                <RelativeLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sideback"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/VideoText"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="12dp"
+                    android:text="How to DropShipping" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/VideoTextsec"
+                    android:layout_below="@id/VideoText"
+                    android:textColor="#707070"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-2dp"
+                    android:text="best youtube playlist free for beginners" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/emailB"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/top_circle_amazon"
+                android:layout_below="@+id/youtubeout"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/conecttext"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Contact us" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/conecttextsec"
+                    android:layout_below="@id/conecttext"
+                    android:textColor="#707070"
+                    android:textSize="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-2dp"
+                    android:text="If you are interested in other suppliers" />
+
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/sideback">
+            </RelativeLayout>
+        </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

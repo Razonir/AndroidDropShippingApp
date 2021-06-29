@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".premium">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/cont"
+        android:elevation="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="65dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/buttom_menu">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="40dp"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact us"
+            android:id="@+id/one"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send an email"
+            android:id="@+id/two"
+            android:layout_below="@+id/one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/two">
+
+            <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/Subject"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:text="Subject:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:elevation="5dp"
+            android:background="@drawable/top_circle_amazon"
+            android:layout_below="@+id/Subject"
+            android:id="@+id/sT">
+            <EditText
+            android:id="@+id/edit_text_subject"
+                android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailSubject" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sT"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/Message"
+            android:text="Message:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/mT"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:elevation="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_circle_amazon"
+                android:layout_below="@id/Message">
+
+            <EditText
+            android:id="@+id/edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+            android:lines="5" />
+            </RelativeLayout>
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="match_parent"
+            android:background="@drawable/top_circle_menu"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:layout_below="@id/mT"
+            android:text="send" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:elevation="5dp"
+        android:src="@drawable/email"
+        android:visibility="visible" />
+</RelativeLayout>

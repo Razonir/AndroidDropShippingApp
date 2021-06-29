@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.eBay">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/alicard"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/top_circle_menu"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ripple_effect_raised">
+            <ImageView
+                android:id="@+id/amazonimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:srcCompat="@drawable/fgdfdggfd" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="Aliexpress"
+            android:textSize="10dp"
+            android:layout_marginBottom="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/midfirstelfirst"
+        android:layout_width="20dp"
+        android:layout_toStartOf="@+id/alicard"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:id="@+id/midelfirst"
+        android:layout_width="20dp"
+        android:layout_toEndOf="@+id/alicard"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/ali"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp"
+        android:layout_toEndOf="@id/midelfirst"
+        android:background="@drawable/top_circle_menu">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ripple_effect_raised">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/comingsoonshop" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="10dp"
+            android:layout_alignParentBottom="true"
+            android:text="coming soon"
+            android:layout_marginBottom="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/amazon"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/midfirstelfirst"
+        android:background="@drawable/top_circle_menu"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ripple_effect_raised">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:srcCompat="@drawable/amazon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="Amazon"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

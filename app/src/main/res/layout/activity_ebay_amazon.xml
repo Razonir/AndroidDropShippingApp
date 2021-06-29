@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="ltr"
+    tools:context=".EbayAmazon">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_height="200dp"
+        android:background="@drawable/button_menu"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="50dp"
+        android:background="@drawable/abc_vector_test"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="convert to ILS"
+        android:id="@+id/convertILS"
+        android:textAllCaps="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/top_circle_amazon"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toptop"
+
+        android:layout_marginTop="35dp">
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_above="@+id/bigwhite"
+            android:background="@drawable/button_menu" />
+        <TextView
+            android:id="@+id/TitleFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Amazon To Ebay"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/TitleSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/TitleFirst"
+            android:text="Calculator"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/TitleSec"
+            android:src="@drawable/amazon"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/TitleSec"
+            android:elevation="50dp"
+            android:background="@drawable/backwhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tab_layout_out"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_height="45dp">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:tabGravity="center"
+                app:tabTextColor="#000"
+                android:layout_margin="5dp"
+                app:tabIndicatorColor="#1D79C3"
+                app:tabSelectedTextColor="#1D79C3"
+                android:background="#F0F0F0"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout_out">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6247824013289332/9427586585">
+    </com.google.android.gms.ads.AdView>
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/adView"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-6247824013289332/3877742399">
+            </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
